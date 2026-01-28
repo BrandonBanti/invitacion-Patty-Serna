@@ -1,0 +1,143 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Invitación 50 Años</title>
+
+  <link rel="stylesheet" href="./css/styles.css" />
+  <script defer src="./js/app.js"></script>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <div id="card" class="card theme-fiesta">
+      <div class="neon-frame"></div>
+      <canvas id="confetti"></canvas>
+
+      <div class="content">
+        <div class="headline">
+          <div class="kicker" id="kicker">¡Gran fiesta!</div>
+
+          <!-- FOTO (normal) -->
+          <div class="photo-wrap" aria-label="Foto">
+            <img
+              id="photo"
+              class="photo"
+              src="./assets/img/foto-mama.jpg"
+              alt="Foto de la festejada"
+              loading="eager"
+            />
+          </div>
+
+          <div class="name">Celebramos los 50 años de Patty</div>
+          <div class="big50" id="big50">50</div>
+          <div class="subtitle" id="subtitle">¡Vamos a celebrar!</div>
+        </div>
+
+        <!-- Mensaje -->
+        <div class="message-card">
+          <p id="messageText" class="message-text"></p>
+        </div>
+
+        <!-- Countdown -->
+        <div class="countdown" aria-label="Temporizador para el evento">
+          <div class="countdown-title">Falta para la fiesta</div>
+
+          <div class="countdown-grid" role="group" aria-label="Cuenta regresiva">
+            <div class="timebox">
+              <div class="timevalue" id="cdDays">--</div>
+              <div class="timelabel">Días</div>
+            </div>
+            <div class="timebox">
+              <div class="timevalue" id="cdHours">--</div>
+              <div class="timelabel">Horas</div>
+            </div>
+            <div class="timebox">
+              <div class="timevalue" id="cdMinutes">--</div>
+              <div class="timelabel">Minutos</div>
+            </div>
+            <div class="timebox">
+              <div class="timevalue" id="cdSeconds">--</div>
+              <div class="timelabel">Segundos</div>
+            </div>
+          </div>
+
+          <div class="countdown-sub" id="countdownSub">Cargando…</div>
+        </div>
+
+        <!-- BOLETOS -->
+        <div class="tickets" aria-label="Boletos asignados">
+          <div class="tickets-title">Boletos de invitación</div>
+
+          <!-- Tarjeta bonita SIN división -->
+          <div class="ticket ticket--flat" role="group" aria-label="Boletos">
+            <div class="ticket-flat-head">
+              <div class="ticket-kicker">Invitación</div>
+              <div class="ticket-event">50 Años</div>
+            </div>
+
+            <div class="ticket-flat-body">
+              <div class="ticket-flat-left">
+                <div class="ticket-sub" id="ticketSub">Válido para 1 invitado</div>
+                
+              </div>
+
+              <div class="ticket-flat-right">
+                <div class="ticket-kicker">Boletos asignados</div>
+                <div class="ticket-qty" id="ticketQty">1</div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Aviso amigable -->
+          <div class="confirm-alert" role="note" aria-label="Confirmación">
+            <div class="confirm-alert-title">💙 ¿Nos ayudas confirmando?</div>
+            <div class="confirm-alert-text">
+              Para organizarnos mejor, por favor confirma tu asistencia antes del
+              <strong>17 de febrero</strong>.
+              <span class="confirm-alert-sub">¡Nos encantará contar contigo! ✨</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Detalles -->
+        <div class="details">
+          <div class="row">
+            <div class="cell">
+              <div class="label">Festejada</div>
+              <div class="value" id="momName">Nombre de tu mamá</div>
+            </div>
+            <div class="cell">
+              <div class="label">Fecha</div>
+              <div class="value" id="date">Sábado 00 de Mes</div>
+            </div>
+            <div class="cell">
+              <div class="label">Hora</div>
+              <div class="value" id="time">00:00 PM</div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="cell wide">
+              <div class="label">Lugar</div>
+              <div class="addr" id="place">Salón / Casa</div>
+
+              <div class="label mt">Dirección</div>
+              <div class="addr" id="address">Calle, Colonia, Ciudad</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button class="primary" id="btnWhats">Confirmar</button>
+          <button class="ghost" id="btnMaps">Ver ubicación</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
