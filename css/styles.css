@@ -90,13 +90,34 @@ button:disabled{cursor: default; opacity: .95;}
   font-weight: 900;
   font-size: clamp(84px, 14vw, 148px);
   line-height: .9;
-  width:fit-content;
-  background: linear-gradient(135deg, var(--blue2), #ffffff);
+  width: fit-content;
+
+  /* GOLD GRADIENT (con brillo) */
+  background: linear-gradient(
+    135deg,
+    #fff3c4 0%,
+    #ffd37a 18%,
+    #ffb84a 36%,
+    #fff1c9 52%,
+    #f6b14a 72%,
+    #ffdf95 86%,
+    #fff7da 100%
+  );
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  -webkit-text-stroke: 1px rgba(0,212,255,.15);
-  text-shadow: 0 0 18px rgba(0,212,255,.25), 0 10px 40px rgba(0,0,0,.6);
+
+  /* borde sutil dorado */
+  -webkit-text-stroke: 1px rgba(255, 215, 140, .22);
+
+  /* glow dorado + sombra */
+  text-shadow:
+    0 0 12px rgba(255, 200, 90, .22),
+    0 0 26px rgba(255, 200, 90, .18),
+    0 12px 44px rgba(0, 0, 0, .65);
+
+  /* opcional: un poquito más “premium” */
+  filter: saturate(1.15) contrast(1.05);
 }
 .subtitle{font-size: clamp(16px, 2.2vw, 22px); color: rgba(255,255,255,.92); font-style: italic;}
 
