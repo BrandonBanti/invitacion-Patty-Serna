@@ -11,9 +11,10 @@ const INVITE = {
   eventDateTime: "2026-03-21T19:30:00-06:00",
 
   message:
-    "Estoy emocionado de celebrar mis 50 años, un viaje lleno de aventuras, aprendizajes y recuerdos inolvidables. " +
-    "No puedo imaginar este momento especial sin tu compañía. Te invito a disfrutar juntos de una noche llena de " +
-    "música, nostalgia y mucho cariño. ¡Prepárate para vivir momentos únicos y una celebración llena de diversión!",
+    "Con la bendición de Dios y el amor que mi familia me ha regalado a lo largo de mi vida, llego a este momento tan especial llena de gratitud y felicidad." +
+    " Celebrar mis 50 años representa un viaje de aventuras, aprendizajes y recuerdos inolvidables, y no puedo imaginar esta ocasión sin tu compañía, pues tú" + 
+    "también formas parte de mi historia."+
+    " ¡Prepárate para vivir momentos únicos y celebrar juntos esta etapa tan especial de mi vida!",
 };
 
 function pad2(n) { return String(n).padStart(2, "0"); }
