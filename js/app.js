@@ -13,7 +13,7 @@ const INVITE = {
   message:
     "Con la bendición de Dios y el amor que mi familia me ha regalado a lo largo de mi vida, llego a este momento tan especial llena de gratitud y felicidad." +
     " Celebrar mis 50 años representa un viaje de aventuras, aprendizajes y recuerdos inolvidables, y no puedo imaginar esta ocasión sin tu compañía, pues tú" + 
-    "también formas parte de mi historia."+
+    " también formas parte de mi historia."+
     " ¡Prepárate para vivir momentos únicos y celebrar juntos esta etapa tan especial de mi vida!",
 };
 
